@@ -37,17 +37,17 @@ function getComputerMove(move) {
 
 function getWinner(playerMove,computerMove) {
     var winner;
-    if (playerMove === rock && computermove === scissors){
+    if (playerMove === 'rock' && computermove === 'scissors'){
         winner = "player"
-    } else if (playermove === paper && computermove === rock){
-        winner = "player';
-    } else if (playermove === scissors && computermove === paper){
+    } else if (playermove === 'paper' && computermove === 'rock'){
         winner = "player";
-    } else if (playermove === rock && computermove === paper){
+    } else if (playermove === 'scissors' && computermove === 'paper'){
+        winner = "player";
+    } else if (playermove === 'rock' && computermove === 'paper'){
         winner = "computer";
-    } else if (playermove === paper && computermove === scissors){
+    } else if (playermove === 'paper' && computermove === 'scissors'){
         winner = "computer";
-    } else if (playermove === scissors && computer move === rock){
+    } else if (playermove === 'scissors' && computer move === 'rock'){
         winner = "computer";
     } else {
         winner = "tie"
